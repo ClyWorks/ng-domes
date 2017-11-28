@@ -8,6 +8,8 @@ import { LeftmeunComponent } from './leftmeun/leftmeun.component';
 import { ContentComponent } from './content/content.component';
 import { FooterComponent } from './footer/footer.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
+import { StockComponent } from './stock/stock.component';
+import { StartsComponent } from './starts/starts.component';
 
 
 @NgModule({
@@ -17,7 +19,9 @@ import { SidebarComponent } from './sidebar/sidebar.component';
     LeftmeunComponent,
     ContentComponent,
     FooterComponent,
-    SidebarComponent
+    SidebarComponent,
+    StockComponent,
+    StartsComponent
   ],
   imports: [
     BrowserModule

@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { RouterModule,Routes } from '@angular/router';
 
 
 import { AppComponent } from './app.component';
@@ -11,6 +12,9 @@ import { SidebarComponent } from './sidebar/sidebar.component';
 import { StockComponent } from './stock/stock.component';
 import { StartsComponent } from './starts/starts.component';
 
+const routeConfig: Routes=[
+  {path:'stock',component:StockComponent}
+]
 
 @NgModule({
   declarations: [
@@ -24,7 +28,8 @@ import { StartsComponent } from './starts/starts.component';
     StartsComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    RouterModule.forRoot(routeConfig)
   ],
   providers: [],
   bootstrap: [AppComponent]
